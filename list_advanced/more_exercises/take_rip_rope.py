@@ -2,13 +2,13 @@ from typing import List
 
 
 def find_numbers(text: str) -> List[int]:
-	result = []
-	for char in text:
-		if char.isdigit():
-			number = int(char)
-			result.append(number)
+    result = []
+    for char in text:
+        if char.isdigit():
+            number = int(char)
+            result.append(number)
 
-	return result
+    return result
 
 
 def find_non_numbers(text: str) -> List[str]:
