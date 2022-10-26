@@ -2,6 +2,10 @@ from typing import List
 
 
 def find_numbers(text: str) -> List[int]:
+    '''
+    Finds numbers in the given string.
+    '''
+
     result = []
     for char in text:
         if char.isdigit():
@@ -12,6 +16,10 @@ def find_numbers(text: str) -> List[int]:
 
 
 def find_non_numbers(text: str) -> List[str]:
+    '''
+    Finds non numbers in the given string.
+    '''
+
     result = ''
     for char in text:
         if not char.isdigit():
@@ -36,13 +44,18 @@ def get_even_numbers(numbers: List[int]) -> List[int]:
 
 
 def get_odd_numbers(numbers: List[int]) -> List[int]:
-	odd_numbers_list = []
-	for index, value in enumerate(numbers):
-		# Check if index is odd.		
-		if index % 2 == 1:
-			odd_numbers_list.append(value)
+    '''
+    Finds odd index and store the corresponding value.
+    Returns that list.
+    '''
 
-	return odd_numbers_list	
+    odd_numbers_list = []
+    for index, value in enumerate(numbers):
+        # Check if index is odd.		
+        if index % 2 == 1:
+            odd_numbers_list.append(value)
+
+    return odd_numbers_list	
 
 
 string = input()
