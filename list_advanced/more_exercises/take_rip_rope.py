@@ -12,12 +12,12 @@ def find_numbers(text: str) -> List[int]:
 
 
 def find_non_numbers(text: str) -> List[str]:
-	result = ''
-	for char in text:
-		if not char.isdigit():
-			result += char
+    result = ''
+    for char in text:
+        if not char.isdigit():
+            result += char
 
-	return result
+    return result
 
 
 def get_even_numbers(numbers: List[int]) -> List[int]:
